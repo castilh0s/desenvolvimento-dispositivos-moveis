@@ -28,18 +28,41 @@ public class TriangulosTeste {
   }
 
   private static void trianguloA(Integer tamanhoTriangulo) {
-    System.out.println("Triângulo A de tamanho: " + tamanhoTriangulo);
+    for (Integer i = 1; i <= tamanhoTriangulo; i++) {
+      imprimeLinha(i, true);
+    }
   }
 
   private static void trianguloB(Integer tamanhoTriangulo) {
-    System.out.println("Triângulo B de tamanho: " + tamanhoTriangulo);
+    for (Integer i = tamanhoTriangulo; i > 0; i--) {
+      imprimeLinha(i, true);
+    }
   }
 
   private static void trianguloC(Integer tamanhoTriangulo) {
-    System.out.println("Triângulo C de tamanho: " + tamanhoTriangulo);
+    for (Integer i = tamanhoTriangulo; i > 0; i--) {
+      imprimeLinha((tamanhoTriangulo - i), false);
+      imprimeLinha(i, true);
+    }
   }
 
   private static void trianguloD(Integer tamanhoTriangulo) {
-    System.out.println("Triângulo D de tamanho: " + tamanhoTriangulo);
+    for (Integer i = 1; i <= tamanhoTriangulo; i++) {
+      imprimeLinha((tamanhoTriangulo - i), false);
+      imprimeLinha(i, true);
+    }
+  }
+
+  private static void imprimeLinha(Integer tamanho, Boolean asterisco) {
+    String caracter = " ";
+    if (asterisco)
+      caracter = "*";
+
+    for (int i = 0; i < tamanho; i++) {
+      System.out.print(caracter);
+    }
+
+    if (asterisco)
+      System.out.println();
   }
 }
