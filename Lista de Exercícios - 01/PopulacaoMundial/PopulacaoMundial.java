@@ -10,8 +10,7 @@ public class PopulacaoMundial {
 
     Integer ano = Integer.valueOf(args[0]);
 
-    Double populacaoFinal = POPULACAO_ATUAL * Math.pow((1 + (TAXA_CRESCIMENTO / 100)), ano);
-    Long populacaoFinalLong = Math.round(populacaoFinal);
+    Long populacaoFinal = Math.round(POPULACAO_ATUAL * Math.pow((1 + (TAXA_CRESCIMENTO / 100)), ano));
 
     System.out.println(populacaoFinalLong + " pessoas");
   }
