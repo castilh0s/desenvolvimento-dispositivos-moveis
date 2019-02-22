@@ -19,8 +19,13 @@
 *.tar.gz
 *.rar
 
+# Classpath and projet (Eclipse project)
+.classpath
+.project
+
 # virtual machine crash logs, see http://www.java.com/en/download/help/error_hotspot.xml
 hs_err_pid*
 
 # Pastas indesejadas
 Aula 02/
+bin/
