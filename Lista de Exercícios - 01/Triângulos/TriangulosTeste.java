@@ -7,7 +7,11 @@ public class TriangulosTeste {
 		Integer tamanhoTriangulo = Integer.valueOf(args[1]);
 
 		Triangulos triangulo = new Triangulos(tipoTriangulo, tamanhoTriangulo);
+		chooseTriangle(triangulo);
+		System.out.print(triangulo);
+	}
 
+	private static void chooseTriangle(Triangulos triangulo) {
 		switch (triangulo.getTipoTriangulo()) {
 		case "a":
 			triangulo.trianguloA();
@@ -24,9 +28,7 @@ public class TriangulosTeste {
 		default:
 			break;
 		}
-
-    System.out.print(triangulo);
-  }
+	}
 
 	private static void validate(String[] args) {
 		if (args.length != 2) {

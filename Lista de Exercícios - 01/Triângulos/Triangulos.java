@@ -38,7 +38,7 @@ public class Triangulos {
 	public void trianguloA() {
 		String triangle = "";
 		for (Integer i = 1; i <= getTamanhoTriangulo(); i++) {
-			triangle += printLine(i, "*") + "\n";
+			triangle += createLine(i, "*") + "\n";
 		}
 		setTriangle(triangle);
 	}
@@ -46,7 +46,7 @@ public class Triangulos {
 	public void trianguloB() {
     String triangle = "";
 		for (Integer i = getTamanhoTriangulo(); i > 0; i--) {
-      triangle += printLine(i, "*") + "\n";
+      triangle += createLine(i, "*") + "\n";
     }
 		setTriangle(triangle);
 	}
@@ -54,8 +54,8 @@ public class Triangulos {
 	public void trianguloC() {
     String triangle = "";
 		for (Integer i = getTamanhoTriangulo(); i > 0; i--) {
-			triangle += printLine((getTamanhoTriangulo() - i), " ");
-			triangle += printLine(i, "*") + "\n";
+			triangle += createLine((getTamanhoTriangulo() - i), " ");
+			triangle += createLine(i, "*") + "\n";
     }
     setTriangle(triangle);
 	}
@@ -63,15 +63,15 @@ public class Triangulos {
 	public void trianguloD() {
     String triangle = "";
 		for (Integer i = 1; i <= getTamanhoTriangulo(); i++) {
-			triangle += printLine((getTamanhoTriangulo() - i), " ");
-			triangle += printLine(i, "*") + "\n";
+			triangle += createLine((getTamanhoTriangulo() - i), " ");
+			triangle += createLine(i, "*") + "\n";
     }
     setTriangle(triangle);
 	}
 
-	private String printLine(Integer tamanho, String caracter) {
-		return IntStream.range(0, tamanho)
-				.mapToObj(i -> caracter)
+	private String createLine(Integer length, String character) {
+		return IntStream.range(0, length)
+				.mapToObj(i -> character)
 				.collect(Collectors.joining(""));
   }
 
