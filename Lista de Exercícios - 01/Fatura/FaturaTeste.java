@@ -8,10 +8,6 @@ public class FaturaTeste {
 		Integer item = Integer.valueOf(args[2]);
 		Double precoItem = Double.valueOf(args[3]);
 
-		execute(codigo, descricao, item, precoItem);
-	}
-
-	private static void execute(String codigo, String descricao, Integer item, Double precoItem) {
 		Fatura fatura = new Fatura(codigo, descricao, item, precoItem);
 		System.out.println(fatura);
 	}
