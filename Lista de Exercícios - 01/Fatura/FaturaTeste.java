@@ -13,7 +13,7 @@ public class FaturaTeste {
 
 	private static void execute(String codigo, String descricao, Integer item, Double precoItem) {
 		Fatura fatura = new Fatura(codigo, descricao, item, precoItem);
-		System.out.println(fatura.toString());
+		System.out.println(fatura);
 	}
 
 	private static void validate(String[] args) throws Exception {
