@@ -1,17 +1,36 @@
+
 public class PopulacaoMundial {
-  public static void main(String[] args) {
-    if (args.length != 1) {
-      System.out.println("Necessário passar um valor númerico como parâmetro");
-      System.exit(0);
-    }
+	private Long POPULACAO_ATUAL = 7000000000L;
+	private Double TAXA_CRESCIMENTO = 1.2;
+	private Integer ano;
 
-    Long POPULACAO_ATUAL = 7000000000L;
-    Double TAXA_CRESCIMENTO = 1.2;
+	public PopulacaoMundial(Integer ano) {
+		this.setAno(ano);
+	}
 
-    Integer ano = Integer.valueOf(args[0]);
+	public Long getPOPULACAO_ATUAL() {
+		return POPULACAO_ATUAL;
+	}
 
-    Long populacaoFinal = Math.round(POPULACAO_ATUAL * Math.pow((1 + (TAXA_CRESCIMENTO / 100)), ano));
+	public Double getTAXA_CRESCIMENTO() {
+		return TAXA_CRESCIMENTO;
+	}
 
-    System.out.println(populacaoFinalLong + " pessoas");
-  }
+	public Integer getAno() {
+		return ano;
+	}
+
+	public void setAno(Integer ano) {
+		this.ano = ano;
+	}
+
+	public Long getPopulacaoFinal() {
+		return Math.round(getPOPULACAO_ATUAL() * Math.pow((1 + (getTAXA_CRESCIMENTO() / 100)), getAno()));
+	}
+
+	@Override
+	public String toString() {
+		String saida = String.format("%d pessoas.", getPopulacaoFinal());
+		return saida;
+	}
 }
