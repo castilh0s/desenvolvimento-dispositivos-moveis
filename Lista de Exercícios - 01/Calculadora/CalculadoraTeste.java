@@ -12,7 +12,7 @@ public class CalculadoraTeste {
 
 	private static void validate(String[] args) throws Exception {
 		if (args.length != 2) {
-			throw new Exception("Necessário passar dois valores inteiros como paramêtro.");
+			throw new Exception("Necessário passar dois valores inteiros como parâmetro.");
 		}
 	}
 }

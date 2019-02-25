@@ -14,7 +14,7 @@ public class FaturaTeste {
 
 	private static void validate(String[] args) throws Exception {
 		if (args.length != 4) {
-			throw new Exception("Necessário passar quatro paramêtros:\n" +
+			throw new Exception("Necessário passar quatro parâmetros:\n" +
 					"1. Código do produto;\n" +
 					"2. Descrição do produto;\n" +
 					"3. Quantidade de items;\n" +
