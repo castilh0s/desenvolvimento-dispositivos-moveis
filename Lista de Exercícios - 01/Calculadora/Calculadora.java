@@ -1,52 +1,62 @@
+
 public class Calculadora {
-	public static void main(String[] args) {
-		if (args.length != 2) {
-			System.out.println("Necessário passar dois valores inteiros como parâmetro");
-			System.exit(0);
-		}
+	private Integer valueA;
+	private Integer valueB;
 
-		Integer valorA = Integer.valueOf(args[0]);
-		Integer valorB = Integer.valueOf(args[1]);
-
-		Integer soma = soma(valorA, valorB);
-		Integer produto = produto(valorA, valorB);
-		Integer diferenca = diferenca(valorA, valorB);
-		Double divisao = divisao((double) valorA, (double) valorB);
-		String maiorValor = maiorValor(valorA, valorB);
-
-		print(soma, produto, diferenca, divisao, maiorValor);
+	public Calculadora(Integer valueA, Integer valueB) {
+		this.setValueA(valueA);
+		this.setValueB(valueB);
 	}
 
-	private static void print(Integer soma, Integer produto, Integer diferenca, Double divisao, String maiorValor) {
-		System.out.println("Soma: " + soma + "\n" +
-				"Produto: " + produto + "\n" +
-				"Diferença: " + diferenca + "\n" +
-				"Divisão: " + divisao + "\n" +
-				maiorValor);
+	private Integer getValueA() {
+		return valueA;
 	}
 
-	private static Integer soma(Integer valorA, Integer valorB) {
-		return valorA + valorB;
+	private void setValueA(Integer valueA) {
+		this.valueA = valueA;
 	}
 
-	private static Integer produto(Integer valorA, Integer valorB) {
-		return valorA * valorB;
+	private Integer getValueB() {
+		return valueB;
 	}
 
-	private static Integer diferenca(Integer valorA, Integer valorB) {
-		return valorA - valorB;
+	private void setValueB(Integer valueB) {
+		this.valueB = valueB;
 	}
 
-	private static Double divisao(Double valorA, Double valorB) {
-		return valorA / valorB;
+	private Integer getAddition() {
+		return getValueA() + getValueB();
 	}
 
-	private static String maiorValor(Integer valorA, Integer valorB) {
-		if (valorA > valorB)
-			return (valorA + " é maior");
-		else if (valorB > valorA)
-			return (valorB + " é maior");
+	private Integer getSubtraction() {
+		return getValueA() - getValueB();
+	}
+
+	private Integer getMultiplication() {
+		return getValueA() * getValueB();
+	}
+
+	private Double getDivision() {
+		return (double) getValueA() / (double) getValueB();
+	}
+
+	private String greaterValue() {
+		if (getValueA() > getValueB())
+			return String.format("%d é o maior.", getValueA());
+		else if (getValueB() > getValueA())
+			return String.format("%d é o maior", getValueB());
 		else
-			return "Esses números são iguais";
+			return String.format("Esses números são iguais.");
+	}
+
+	@Override
+	public String toString() {
+		String saida = String.format("Soma: %d\n", getAddition());
+		saida += String.format("Produto: %d\n", getMultiplication());
+		saida += String.format("Diferença: %d\n", getSubtraction());
+		saida += String.format("Divisão: %.2f\n", getDivision());
+		saida += greaterValue();
+
+		return saida;
 	}
 }
