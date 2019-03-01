@@ -1,10 +1,15 @@
 # População Mundial
 
-Utilize a wikipedia para descobrir a população mundial atual e a taxa de crescimento demográfico mundial anual. Escreva um aplicativo de linha de comando que receba como parâmetro um inteiro que representa o ano e utilize esses valores para retornar a população mundial estimada depois dessa quantidade de anos informada.
+A população mundial atual é de aproximadamente 7 bilhões de pessoas e a taxa de crescimento demográfico aproximada é de 1.2. Escreva um programa que recebe como entrada um período de de anos futuros e retorne a população mundial estimada para o final deste período.
 
 ## Exemplo
 
+**Entrada:**
+
+* Quantidade de anos. Ex: 3
+
+**Saída de exemplo:**
+
 ```bash
-$ java PopulacaoMundial 3
 > 7.444.333.222 pessoas
 ```
