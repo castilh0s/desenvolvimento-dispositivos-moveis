@@ -12,6 +12,10 @@ public class Fatura {
 		this.setPrecoItem(precoItem);
 	}
 
+  public String getCodigo() {
+		return codigo;
+	}
+
 	public void setCodigo(String codigo) {
 		this.codigo = codigo;
 	}
@@ -46,7 +50,8 @@ public class Fatura {
 
 	@Override
 	public String toString() {
-		String saida = String.format("Descrição: %s\n", getDescricao());
+    String saida = String.format("Código: %s\n", getCodigo());
+    saida += String.format("Descrição: %s\n", getDescricao());
 		saida += String.format("Total: R$ %.2f", getTotalFaturado());
 
 		return saida;
