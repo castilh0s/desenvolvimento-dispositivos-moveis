@@ -27,19 +27,19 @@ Considere como exemplo de conteúdo para o arquivo JSON a estrutura abaixo:
     {
       "codigo": "A12C",
       "descricao": "Computador",
-      "quantidade", 1,
+      "quantidade": 1,
       "preco": 2021.42
     },
     {
       "codigo": "B132",
       "descricao": "Impressora",
-      "quantidade", 1,
+      "quantidade": 1,
       "preco": 821.42
     },
     {
       "codigo": "D34F",
       "descricao": "Mouse",
-      "quantidade", 8,
+      "quantidade": 8,
       "preco": 42.42
     }
   ]
