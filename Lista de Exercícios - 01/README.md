@@ -1,10 +1,8 @@
 # Lista de Exercícios - 01
 
-**Disciplina:** Desenvolvimento para Dispositivos Móveis
-
-**Professor:** Alan Rafael Fachini
-
-**Aluno:** Henrique de Castilhos
+* **Disciplina:** Desenvolvimento para Dispositivos Móveis
+* **Professor:** Alan Rafael Fachini
+* **Aluno:** Henrique de Castilhos
 
 ## Instruções
 
