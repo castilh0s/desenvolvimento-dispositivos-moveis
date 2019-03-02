@@ -17,3 +17,13 @@ Quando uma ou mais saídas são esperadas pelo programa, elas devem ser impressa
 Use Java 8.
 
 ## Exercícios
+
+1. [População Mundial](https://link)
+2. [Calculadora](https://link)
+3. [Triângulos](https://link)
+4. [Fatura](https://link)
+5. [Retângulo](https://link)
+6. [Geometria](https://link)
+7. [Área](https://link)
+8. [Cartas](https://link)
+9. [JSON](https://link)
