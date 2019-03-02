@@ -18,12 +18,12 @@ Use Java 8.
 
 ## Exercícios
 
-1. [População Mundial](https://link)
-2. [Calculadora](https://link)
-3. [Triângulos](https://link)
-4. [Fatura](https://link)
-5. [Retângulo](https://link)
-6. [Geometria](https://link)
-7. [Área](https://link)
-8. [Cartas](https://link)
-9. [JSON](https://link)
+1. [População Mundial](https://github.com/castilh0s/desenvolvimento-dispositivos-moveis/tree/master/Lista%20de%20Exerc%C3%ADcios%20-%2001/PopulacaoMundial)
+2. [Calculadora](https://github.com/castilh0s/desenvolvimento-dispositivos-moveis/tree/master/Lista%20de%20Exerc%C3%ADcios%20-%2001/Calculadora)
+3. [Triângulos](https://github.com/castilh0s/desenvolvimento-dispositivos-moveis/tree/master/Lista%20de%20Exerc%C3%ADcios%20-%2001/Tri%C3%A2ngulos)
+4. [Fatura](https://github.com/castilh0s/desenvolvimento-dispositivos-moveis/tree/master/Lista%20de%20Exerc%C3%ADcios%20-%2001/Fatura)
+5. [Retângulo](https://github.com/castilh0s/desenvolvimento-dispositivos-moveis/tree/master/Lista%20de%20Exerc%C3%ADcios%20-%2001/Ret%C3%A2ngulo)
+6. [Geometria](https://github.com/castilh0s/desenvolvimento-dispositivos-moveis/tree/master/Lista%20de%20Exerc%C3%ADcios%20-%2001/Geometria)
+7. [Área](https://github.com/castilh0s/desenvolvimento-dispositivos-moveis/tree/master/Lista%20de%20Exerc%C3%ADcios%20-%2001/%C3%81rea)
+8. [Cartas](https://github.com/castilh0s/desenvolvimento-dispositivos-moveis/tree/master/Lista%20de%20Exerc%C3%ADcios%20-%2001/Cartas)
+9. [JSON](https://github.com/castilh0s/desenvolvimento-dispositivos-moveis/tree/master/Lista%20de%20Exerc%C3%ADcios%20-%2001/JSON)
