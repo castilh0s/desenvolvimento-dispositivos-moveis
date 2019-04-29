@@ -4,4 +4,19 @@ Repositório referente a matéria de Desenvolvimento para Dispositivos Móveis m
 
 ## Conteúdos
 
-* [Lista de Exercícios - 01](https://github.com/castilh0s/desenvolvimento-dispositivos-moveis/tree/master/Lista%20de%20Exerc%C3%ADcios%20-%2001)
+<!-- ### Projetos -->
+
+### Exercícios
+
+- [Lista - Java](https://github.com/castilh0s/desenvolvimento-dispositivos-moveis/tree/master/Lista-Java)
+- [App para Filmes](https://github.com/castilh0s-archives/MoviesApp)
+
+### Exemplos
+
+- [Alert Dialog](https://github.com/castilh0s-archives/Alert-Dialog-Example)
+- [EditText](https://github.com/castilh0s-archives/EditText-Example)
+- [ListView](https://github.com/castilh0s-archives/ListView-Example)
+- [ProgressBar](https://github.com/castilh0s-archives/ProgressBar-Example)
+- [RecyclerView](https://github.com/castilh0s-archives/RecyclerView-Example)
+- [Toast](https://github.com/castilh0s-archives/Toast-Example)
+- [ToggleButton](https://github.com/castilh0s-archives/ToggleButton-Example)
